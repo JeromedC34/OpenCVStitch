@@ -21,7 +21,6 @@
 		AB3B42701694B64B00A78685 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3B426F1694B64B00A78685 /* Default.png */; };
 		AB3B42721694B64B00A78685 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3B42711694B64B00A78685 /* Default@2x.png */; };
 		AB3B42741694B64B00A78685 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3B42731694B64B00A78685 /* Default-568h@2x.png */; };
-		AB3B427D1694B64B00A78685 /* CVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3B427C1694B64B00A78685 /* CVViewController.m */; };
 		AB3B42841694B6C500A78685 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42831694B6C500A78685 /* opencv2.framework */; };
 		AB3B42861694B6D900A78685 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42851694B6D900A78685 /* libz.dylib */; };
 		AB3B428C1694B71C00A78685 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B428B1694B71C00A78685 /* CoreMedia.framework */; };
@@ -62,8 +61,6 @@
 		AB3B426F1694B64B00A78685 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AB3B42711694B64B00A78685 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AB3B42731694B64B00A78685 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AB3B427B1694B64B00A78685 /* CVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVViewController.h; sourceTree = "<group>"; };
-		AB3B427C1694B64B00A78685 /* CVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVViewController.m; sourceTree = "<group>"; };
 		AB3B42831694B6C500A78685 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		AB3B42851694B6D900A78685 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AB3B428B1694B71C00A78685 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -152,8 +149,6 @@
 				AB3B42DF1695C7AE00A78685 /* UIImage+OpenCV.mm */,
 				AB3B426C1694B64B00A78685 /* CVAppDelegate.h */,
 				AB3B426D1694B64B00A78685 /* CVAppDelegate.m */,
-				AB3B427B1694B64B00A78685 /* CVViewController.h */,
-				AB3B427C1694B64B00A78685 /* CVViewController.m */,
 				AB3B42931694B7B600A78685 /* CVWrapper.h */,
 				AB3B42941694B7B600A78685 /* CVWrapper.mm */,
 				ABDBFA201697D103007B3D6E /* stitching.cpp */,
@@ -292,7 +287,6 @@
 				AB3B426E1694B64B00A78685 /* CVAppDelegate.m in Sources */,
 				8815FC841DF01094006B75E0 /* MyOpenCV.swift in Sources */,
 				8815FC861DF02512006B75E0 /* ViewController.swift in Sources */,
-				AB3B427D1694B64B00A78685 /* CVViewController.m in Sources */,
 				AB3B42951694B7B600A78685 /* CVWrapper.mm in Sources */,
 				ABDBFA4F1697DFB3007B3D6E /* UIImage+OpenCV.mm in Sources */,
 				AB5FD7791BD42C93002B6B05 /* UIImage+Rotate.m in Sources */,
