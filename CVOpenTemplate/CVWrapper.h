@@ -16,5 +16,6 @@
 
 + (UIImage*) processWithArray:(NSArray*)imageArray;
 
++ (UIImage*) check2Images:(UIImage*)inputImage1 image2:(UIImage*)inputImage2;
 
 @end
