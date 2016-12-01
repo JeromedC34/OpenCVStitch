@@ -11,6 +11,7 @@
 		8815FC861DF02512006B75E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8815FC851DF02512006B75E0 /* ViewController.swift */; };
 		8815FC891DF03AF3006B75E0 /* trolltunga0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8815FC871DF03AF3006B75E0 /* trolltunga0.jpg */; };
 		8815FC8A1DF03AF3006B75E0 /* trolltunga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8815FC881DF03AF3006B75E0 /* trolltunga.jpg */; };
+		8815FC8C1DF04404006B75E0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8815FC8B1DF04404006B75E0 /* MainStoryboard.storyboard */; };
 		AB3B425E1694B64A00A78685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425D1694B64A00A78685 /* UIKit.framework */; };
 		AB3B42601694B64A00A78685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425F1694B64A00A78685 /* Foundation.framework */; };
 		AB3B42621694B64A00A78685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42611694B64A00A78685 /* CoreGraphics.framework */; };
@@ -49,6 +50,7 @@
 		8815FC851DF02512006B75E0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8815FC871DF03AF3006B75E0 /* trolltunga0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trolltunga0.jpg; sourceTree = "<group>"; };
 		8815FC881DF03AF3006B75E0 /* trolltunga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trolltunga.jpg; sourceTree = "<group>"; };
+		8815FC8B1DF04404006B75E0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AB3B42591694B64A00A78685 /* CVOpenStitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVOpenStitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3B425D1694B64A00A78685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB3B425F1694B64A00A78685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 				ABDBFA201697D103007B3D6E /* stitching.cpp */,
 				ABDBFA231697D118007B3D6E /* stitching.h */,
 				AB3B42641694B64B00A78685 /* Supporting Files */,
+				8815FC8B1DF04404006B75E0 /* MainStoryboard.storyboard */,
 				8815FC851DF02512006B75E0 /* ViewController.swift */,
 				8815FC831DF01094006B75E0 /* MyOpenCV.swift */,
 				8815FC821DF01094006B75E0 /* CVOpenStitch-Bridging-Header.h */,
@@ -279,6 +282,7 @@
 				ABDBFA441697D9DA007B3D6E /* pano_19_25_lo.jpg in Resources */,
 				ABDBFA451697D9DA007B3D6E /* pano_19_22_lo.jpg in Resources */,
 				ABDBFA461697D9DA007B3D6E /* pano_19_20_lo.jpg in Resources */,
+				8815FC8C1DF04404006B75E0 /* MainStoryboard.storyboard in Resources */,
 				ABDBFA691697F20F007B3D6E /* pano_19_16_mid.jpg in Resources */,
 				ABE81AD0169D22F400F37391 /* README.markdown in Resources */,
 				8815FC8A1DF03AF3006B75E0 /* trolltunga.jpg in Resources */,
