@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="DNA-FC-f5r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="DNA-FC-f5r">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,20 +13,24 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CVViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dmT-KH-bV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="9aj-UX-NJT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="L2K-eh-APF">
-                                <rect key="frame" x="0.0" y="0.0" width="398" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2K-eh-APF">
+                                <rect key="frame" x="0.0" y="0.0" width="708" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="nZG-j0-W7O"/>
                                 </connections>
                             </scrollView>
-                            <activityIndicatorView hidden="YES" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="aqF-TT-CSd">
-                                <rect key="frame" x="168" y="315" width="37" height="37"/>
+                            <activityIndicatorView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-TT-CSd">
+                                <rect key="frame" x="313" y="169" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
@@ -45,29 +49,28 @@
         <scene sceneID="Lo8-Kv-uKU">
             <objects>
                 <viewController id="DNA-FC-f5r" customClass="ViewController" customModule="CVOpenStitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x5k-uk-VQL"/>
+                        <viewControllerLayoutGuide type="bottom" id="uyZ-vR-yrX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cx5-dR-DcJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="PpA-Je-Jnk">
-                                <rect key="frame" x="67" y="174" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="95E-mq-FVi">
-                                <rect key="frame" x="67" y="332" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Y80-4g-zOP">
-                                <rect key="frame" x="67" y="38" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y80-4g-zOP">
+                                <rect key="frame" x="10" y="30" width="647" height="335"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uyZ-vR-yrX" firstAttribute="top" secondItem="Y80-4g-zOP" secondAttribute="bottom" constant="10" id="9YZ-Po-Jb2"/>
+                            <constraint firstItem="Y80-4g-zOP" firstAttribute="top" secondItem="x5k-uk-VQL" secondAttribute="bottom" constant="10" id="BIR-fh-12H"/>
+                            <constraint firstAttribute="trailing" secondItem="Y80-4g-zOP" secondAttribute="trailing" constant="10" id="FX0-pq-HEQ"/>
+                            <constraint firstItem="Y80-4g-zOP" firstAttribute="leading" secondItem="Cx5-dR-DcJ" secondAttribute="leading" constant="10" id="p16-ac-Y72"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="uiImage" destination="PpA-Je-Jnk" id="Hyr-FG-8Dc"/>
-                        <outlet property="uiImage0" destination="Y80-4g-zOP" id="vk7-iX-hDF"/>
-                        <outlet property="uiImage2" destination="95E-mq-FVi" id="P2O-yG-6Gv"/>
+                        <outlet property="uiImage" destination="Y80-4g-zOP" id="OxM-Ap-cbB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5PZ-J3-UP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +80,7 @@
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
 </document>
