@@ -159,9 +159,9 @@
 				ABDBFA201697D103007B3D6E /* stitching.cpp */,
 				ABDBFA231697D118007B3D6E /* stitching.h */,
 				AB3B42641694B64B00A78685 /* Supporting Files */,
+				8815FC851DF02512006B75E0 /* ViewController.swift */,
 				8815FC831DF01094006B75E0 /* MyOpenCV.swift */,
 				8815FC821DF01094006B75E0 /* CVOpenStitch-Bridging-Header.h */,
-				8815FC851DF02512006B75E0 /* ViewController.swift */,
 			);
 			name = CVOpenStitch;
 			path = CVOpenTemplate;

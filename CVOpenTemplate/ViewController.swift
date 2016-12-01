@@ -9,6 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var uiImage0: UIImageView!
+    @IBOutlet weak var uiImage: UIImageView!
+    @IBOutlet weak var uiImage2: UIImageView!
+    override func viewDidAppear(_ animated: Bool) {
+        let images:[UIImage?] = [
+            UIImage(named: "pano_19_16_mid.jpg")!,
+            UIImage(named: "pano_19_20_mid.jpg")!,
+            UIImage(named: "pano_19_22_mid.jpg")!,
+            UIImage(named: "pano_19_25_mid.jpg")!,
+            nil
+        ]
+        uiImage.image = CVWrapper.process(with: images)
+        let images2:[UIImage?] = [
+            UIImage(named: "pano_19_16_mid.jpg")!,
+            UIImage(named: "pano_19_22_mid.jpg")!,
+            nil
+        ]
+        uiImage2.image = CVWrapper.process(with: images2)
+        let myOpenCV:MyOpenCV = MyOpenCV()
+//        uiImage0.image = myOpenCV.main()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

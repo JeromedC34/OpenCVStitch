@@ -56,6 +56,11 @@
 
 + (UIImage*) check2Images:(UIImage*)inputImage1 image2:(UIImage*)inputImage2;
 {
+    cv::Mat img_object = [inputImage1 CVMat3];
+    cv::Mat img_scene  = [inputImage2 CVMat3];
+    //-- Step 1: Detect the keypoints using SURF Detector
+    int minHessian = 400;
+//    SurfFeatureDetector detector( minHessian );
 /*
     Mat img_object = imread( argv[1], CV_LOAD_IMAGE_GRAYSCALE );
     Mat img_scene = imread( argv[2], CV_LOAD_IMAGE_GRAYSCALE );
