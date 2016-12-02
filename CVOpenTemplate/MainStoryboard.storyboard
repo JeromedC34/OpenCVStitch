@@ -46,7 +46,7 @@
         <!--Item-->
         <scene sceneID="KXV-at-9Fg">
             <objects>
-                <viewController id="3Ek-QL-Ls3" sceneMemberID="viewController">
+                <viewController id="3Ek-QL-Ls3" customClass="ScannerViewController" customModule="CVOpenStitch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QWo-sb-M5f"/>
                         <viewControllerLayoutGuide type="bottom" id="A2e-iV-2Cc"/>

@@ -14,6 +14,7 @@
 		8815FC8C1DF04404006B75E0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8815FC8B1DF04404006B75E0 /* MainStoryboard.storyboard */; };
 		881D06381DF0816F003EF018 /* tableau.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D06371DF0816F003EF018 /* tableau.png */; };
 		881D063A1DF08266003EF018 /* tableau0.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D06391DF08266003EF018 /* tableau0.png */; };
+		881D063C1DF184BE003EF018 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D063B1DF184BE003EF018 /* ScannerViewController.swift */; };
 		AB3B425E1694B64A00A78685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425D1694B64A00A78685 /* UIKit.framework */; };
 		AB3B42601694B64A00A78685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425F1694B64A00A78685 /* Foundation.framework */; };
 		AB3B42621694B64A00A78685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42611694B64A00A78685 /* CoreGraphics.framework */; };
@@ -52,6 +53,7 @@
 		8815FC8B1DF04404006B75E0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		881D06371DF0816F003EF018 /* tableau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableau.png; sourceTree = "<group>"; };
 		881D06391DF08266003EF018 /* tableau0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableau0.png; sourceTree = "<group>"; };
+		881D063B1DF184BE003EF018 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AB3B42591694B64A00A78685 /* CVOpenStitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVOpenStitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3B425D1694B64A00A78685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB3B425F1694B64A00A78685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,6 +164,7 @@
 				8815FC851DF02512006B75E0 /* ViewController.swift */,
 				8815FC831DF01094006B75E0 /* MyOpenCV.swift */,
 				8815FC821DF01094006B75E0 /* CVOpenStitch-Bridging-Header.h */,
+				881D063B1DF184BE003EF018 /* ScannerViewController.swift */,
 			);
 			name = CVOpenStitch;
 			path = CVOpenTemplate;
@@ -238,6 +241,7 @@
 				ORGANIZATIONNAME = foundry;
 				TargetAttributes = {
 					AB3B42581694B64A00A78685 = {
+						DevelopmentTeam = 6HZTT57EN4;
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -294,6 +298,7 @@
 				AB3B426A1694B64B00A78685 /* main.m in Sources */,
 				AB3B426E1694B64B00A78685 /* CVAppDelegate.m in Sources */,
 				8815FC841DF01094006B75E0 /* MyOpenCV.swift in Sources */,
+				881D063C1DF184BE003EF018 /* ScannerViewController.swift in Sources */,
 				8815FC861DF02512006B75E0 /* ViewController.swift in Sources */,
 				AB3B42951694B7B600A78685 /* CVWrapper.mm in Sources */,
 				ABDBFA4F1697DFB3007B3D6E /* UIImage+OpenCV.mm in Sources */,
@@ -398,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6HZTT57EN4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,7 +414,7 @@
 				INFOPLIST_FILE = "CVOpenTemplate/CVOpenStitch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.CVOpenStitch;
 				PRODUCT_NAME = CVOpenStitch;
 				SWIFT_OBJC_BRIDGING_HEADER = "CVOpenTemplate/CVOpenStitch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6HZTT57EN4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,7 +438,7 @@
 				INFOPLIST_FILE = "CVOpenTemplate/CVOpenStitch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.CVOpenStitch;
 				PRODUCT_NAME = CVOpenStitch;
 				SWIFT_OBJC_BRIDGING_HEADER = "CVOpenTemplate/CVOpenStitch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
