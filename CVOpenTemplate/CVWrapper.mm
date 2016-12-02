@@ -65,7 +65,7 @@ using namespace cv;
 {
     Mat img_object = [inputImage1 CVMat3];
     Mat img_scene  = [inputImage2 CVMat3];
-
+    
     //-- Step 1: Detect the keypoints using SURF Detector
     int minHessian = 400;
     SurfFeatureDetector detector( minHessian );
@@ -130,9 +130,71 @@ using namespace cv;
     line( img_matches, scene_corners[2] + Point2f( img_object.cols, 0), scene_corners[3] + Point2f( img_object.cols, 0), cvScalar( 0, 255, 0), 4 );
     line( img_matches, scene_corners[3] + Point2f( img_object.cols, 0), scene_corners[0] + Point2f( img_object.cols, 0), cvScalar( 0, 255, 0), 4 );
     
-//    //-- Show detected matches
-//    imshow( "Good Matches & Object detection", img_matches );
+    //    //-- Show detected matches
+    //    imshow( "Good Matches & Object detection", img_matches );
     return [UIImage imageWithCVMat:img_matches];
+}
+
+int maxCorners = 23;
+int maxTrackbar = 100;
+Mat src, src_gray;
+RNG rng(12345);
+//char* source_window = "Image";
+
++ (UIImage*) getRectangleImage:(UIImage*)inputImage1;
+{
+    src = [inputImage1 CVMat3];
+    cvtColor( src, src_gray, CV_BGR2GRAY );
+    
+    /// Create Trackbar to set the number of corners
+//    createTrackbar( "Max  corners:", source_window, &maxCorners, maxTrackbar, goodFeaturesToTrack_Demo );
+    
+//    imshow( source_window, src );
+    
+    Mat img_matches = goodFeaturesToTrack_Demo( 0, 0 );
+    return [UIImage imageWithCVMat:img_matches];
+}
+
+// * @function goodFeaturesToTrack_Demo.cpp
+// * @brief Apply Shi-Tomasi corner detector
+Mat goodFeaturesToTrack_Demo( int, void* )
+{
+    if( maxCorners < 1 ) { maxCorners = 1; }
+    
+    /// Parameters for Shi-Tomasi algorithm
+    vector<Point2f> corners;
+    double qualityLevel = 0.01;
+    double minDistance = 10;
+    int blockSize = 3;
+    bool useHarrisDetector = false;
+    double k = 0.04;
+    
+    /// Copy the source image
+    Mat copy;
+    copy = src.clone();
+    
+    /// Apply corner detection
+    goodFeaturesToTrack(src_gray,
+                        corners,
+                        maxCorners,
+                        qualityLevel,
+                        minDistance,
+                        Mat(),
+                        blockSize,
+                        useHarrisDetector,
+                        k
+                        );
+    
+    /// Draw corners detected
+    std::cout<<"** Number of corners detected: "<<corners.size()<<std::endl;
+    int r = 4;
+    for( int i = 0; i < corners.size(); i++ )
+    { circle( copy, corners[i], r, Scalar(rng.uniform(0,255), rng.uniform(0,255),
+                                          rng.uniform(0,255)), -1, 8, 0 ); }
+    /// Show what you got
+//    namedWindow( source_window, CV_WINDOW_AUTOSIZE );
+//    imshow( source_window, copy );
+    return copy;
 }
 
 @end

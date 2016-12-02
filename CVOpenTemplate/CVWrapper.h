@@ -18,4 +18,6 @@
 
 + (UIImage*) check2Images:(UIImage*)inputImage1 image2:(UIImage*)inputImage2;
 
++ (UIImage*) getRectangleImage:(UIImage*)inputImage1;
+
 @end
